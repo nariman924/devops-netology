@@ -1,12 +1,12 @@
 1. Найдите полный хеш и комментарий коммита, хеш которого начинается на aefea.
-###Решение
+### Решение
 ```
 git rev-parse aefea
 aefead2207ef7e2aa5dc81a34aedf0cad4c32545
 ```
 
 2. Какому тегу соответствует коммит 85024d3?
-###Решение
+### Решение
 ```
 git show 85024d3
 commit 85024d3100126de36331c6982bfaac02cdab9e76 (tag: v0.12.23)
@@ -14,7 +14,7 @@ commit 85024d3100126de36331c6982bfaac02cdab9e76 (tag: v0.12.23)
 Ответ: v0.12.23
 ```
 3. Сколько родителей у коммита b8d720? Напишите их хеши.
-###Решение
+### Решение
 ```
 git show b8d720^
 commit 56cd7859e05c36c06b56d013b55a252d0bb7e158
@@ -22,7 +22,7 @@ commit 56cd7859e05c36c06b56d013b55a252d0bb7e158
 Ответ: 1 прямой предок
 ```
 4. Перечислите хеши и комментарии всех коммитов которые были сделаны между тегами v0.12.23 и v0.12.24.
-###Решение
+### Решение
 ```
 nariman@nariman:~/work/terraform$ git rev-parse v0.12.23
 0bad56c4fcca45a0ba08a88234c6d731b2d8647c
@@ -44,13 +44,13 @@ dd01a35078f040ca984cdd349f18d0b67e486c35 Update CHANGELOG.md
 
 ```
 5. Найдите коммит в котором была создана функция func providerSource, ее определение в коде выглядит так func providerSource(...) (вместо троеточего перечислены аргументы).
-###Решение
+### Решение
 ```
 git log -S "func providerSource(" --pretty=format:"%h %an %ad %s"
 8c928e835 Martin Atkins Thu Apr 2 18:04:39 2020 -0700 main: Consult local directories as potential mirrors of providers
 ```
 6. Найдите все коммиты в которых была изменена функция globalPluginDirs.
-###Решение
+### Решение
 ```
 git log --pretty=oneline -S "globalPluginDirs"
 35a058fb3ddfae9cfee0b3893822c9a95b920f4c main: configure credentials from the CLI config file
@@ -59,7 +59,7 @@ c0b17610965450a89598da491ce9b6b5cbd6393f prevent log output during init
 
 ```
 7. Кто автор функции synchronizedWriters?
-###Решение
+### Решение
 ```
 git log -S "func synchronizedWriters(" --pretty=format:"%h %an %ad %s"
 bdfea50cc James Bardin Mon Nov 30 18:02:04 2020 -0500 remove unused
