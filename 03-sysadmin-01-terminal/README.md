@@ -10,7 +10,7 @@
 sudo apt-get update && sudo apt-get install vagrant
 ```
 
-3. [Апаратные ресурсы выделенные ВМ](img/1.png)
+3. [Апаратные ресурсы выделенные ВМ](../img/1.png)
 
 4. Выделение ресурсов ВМ
 ```
@@ -19,7 +19,7 @@ config.vm.provider "virtualbox" do |v|
       v.cpus = 3
     end
 ```
-5. [vagrant ssh](img/2.png)
+5. [vagrant ssh](../img/2.png)
 6.```HISTSIZE``` -переменная которой можно задать размер истории
 ``` 
  541        HISTSIZE
@@ -49,7 +49,7 @@ config.vm.provider "virtualbox" do |v|
     192               When used with [[, the < and > operators sort lexicographically using the current locale.
 
 ```
-11. [type -a bash](img/3.png)
+11. [type -a bash](../img/3.png)
 ```
 vagrant@vagrant:~$ mkdir /tmp/new_path_directory/
 vagrant@vagrant:~$ cp /bin/bash /tmp/new_path_directory
