@@ -91,6 +91,18 @@ vagrant@vagrant:~$ ls -l /root 9>&2 2>&1 1>&9 |grep denied -c
 2>&1 - stderr перенаправили в stdout 
 1>&9 - stdout - перенаправили в в новый дескриптор
 
+Доработка:
+
+nariman@nariman:~$ cat 12345.txt | wc -c
+cat: 12345.txt: Нет такого файла или каталога
+0
+nariman@nariman:~$ cat 12345.txt 3>&1 1>&2 2>&3 | wc -w
+7
+nariman@nariman:~$ echo Hello World > 12345.txt
+nariman@nariman:~$ cat 12345.txt 3>&1 1>&2 2>&3 | wc -w
+Hello World
+0
+
 ```
 10. Что выведет команда `cat /proc/$$/environ`? Как еще можно получить аналогичный по содержанию вывод?
 ```
