@@ -286,7 +286,8 @@ root@vagrant:~# dmesg | grep md1
      0
      ```
 ```commandline
-gzip -t /tmp/new/test.gz && echo $?
+root@vagrant:~# gzip -t /tmp/new/test.gz && echo $?
+0
 ```
 26. Погасите тестовый хост, `vagrant destroy`.
 ```commandline
