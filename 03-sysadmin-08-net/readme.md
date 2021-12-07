@@ -175,4 +175,4 @@ udp6       0      0 :::5353                 :::*                                
 
 6. Используя diagrams.net, создайте L3 диаграмму вашей домашней сети или любой другой сети, с которой вы работали. 
 7. 
-[Diagram.drawio.png](Diagram.drawio.png)
+[HomeDiagram.drawio.png](HomeDiagram.drawio.png)
