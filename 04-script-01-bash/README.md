@@ -58,7 +58,7 @@ do
 	curl -s $h:80 >/dev/null
 	if (($? != 0))
         then
-           echo $(date) $h >> check.log
+           echo $(date) $i >> check.log
 	fi
     done
 done
