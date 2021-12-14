@@ -172,7 +172,7 @@ nariman@nariman:~/work/testssl.sh$ ./testssl.sh -U --sneaky https://habr.com/
 ```
 
 7. Установите на Ubuntu ssh сервер, сгенерируйте новый приватный ключ. Скопируйте свой публичный ключ на другой сервер. Подключитесь к серверу по SSH-ключу.
-
+```
 ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/vagrant/.ssh/id_rsa): y
@@ -194,7 +194,7 @@ The key's randomart image is:
 |oO .=.+. .       |
 |oE**=Bo+.        |
 +----[SHA256]-----+
- 
+``` 
 
 8. Переименуйте файлы ключей из задания 5. Настройте файл конфигурации SSH клиента, так чтобы вход на удаленный сервер осуществлялся по имени сервера.
 
