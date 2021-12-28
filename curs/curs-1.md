@@ -262,8 +262,8 @@ nariman@nariman:~$ curl https://test.example.com:4443
 nariman@nariman:~$ 
 
 ```
-####До доработки [curs-img.png](./curs-img.png)
-####После доработки:
+#### До доработки [curs-img.png](./curs-img.png)
+#### После доработки:
 ![curs-img-2.png](./curs-img-2.png)
 
 9. Создайте скрипт, который будет генерировать новый сертификат в vault:
