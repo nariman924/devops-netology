@@ -147,7 +147,7 @@ done.
 
 ```
 
-##Доработка
+### Доработка
 ```commandline
 nariman@nariman:~$ sudo cp Qwe.crt /usr/share/ca-certificates/Qwe.crt
 nariman@nariman:~$ sudo dpkg-reconfigure ca-certificates
