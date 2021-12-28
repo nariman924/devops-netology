@@ -147,6 +147,22 @@ done.
 
 ```
 
+##Доработка
+```commandline
+nariman@nariman:~$ sudo cp Qwe.crt /usr/share/ca-certificates/Qwe.crt
+nariman@nariman:~$ sudo dpkg-reconfigure ca-certificates
+Обрабатываются триггеры для ca-certificates (20210119~16.04.1) …
+Updating certificates in /etc/ssl/certs…
+1 added, 1 removed; done.
+Running hooks in /etc/ca-certificates/update.d…
+
+Replacing debian:Qwe.pem
+Removing debian:Qwe.pem
+done.
+done.
+```
+
+
 6. Установите nginx.
 ```commandline
 vagrant@vagrant:~$ sudo apt install nginx
@@ -246,7 +262,9 @@ nariman@nariman:~$ curl https://test.example.com:4443
 nariman@nariman:~$ 
 
 ```
-![curs-img.png](./curs-img.png)
+####До доработки [curs-img.png](./curs-img.png)
+####После доработки:
+![curs-img-2.png](./curs-img-2.png)
 
 9. Создайте скрипт, который будет генерировать новый сертификат в vault:
   - генерируем новый сертификат так, чтобы не переписывать конфиг nginx;
