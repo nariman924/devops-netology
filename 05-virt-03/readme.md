@@ -120,6 +120,8 @@ Gitlab сервер для реализации CI/CD процессов и пр
 - Добавьте еще один файл в папку ```/data``` на хостовой машине;
 - Подключитесь во второй контейнер и отобразите листинг и содержание файлов в ```/data``` контейнера.
 
+### _Ответ_:
+
 1. Создаём образы из dockerfile centos и debian
 ```commandline
 nariman@nariman:~/PycharmProjects/devops-netology/05-virt-03/task_3/centos$ docker build -t nariman-cent .
