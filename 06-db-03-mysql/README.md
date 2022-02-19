@@ -23,6 +23,38 @@
 
 ### Ответ 1:
 
+**Создаём контейнер с помощью docker-compose.yml :**
+
+```commandline
+version: '3.3'
+
+services:
+  nariman-mysql:
+    hostname: nariman-mysql
+    container_name: nariman-mysql
+    user: 1000:1000
+    image: mysql:8.0
+    restart: always
+    ports:
+      - "3307:3306"
+    cap_add:
+      - SYS_NICE
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ./:/var/www/fm:cached
+      - ./test_data:/tmp/mysql
+      - ./data-volume:/var/lib/mysql
+      - ./config:/etc/mysql/conf.d
+      - ./log:/var/log/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: test_db
+      MYSQL_USER: root
+```
+
+**Заходим внутрь контейнера и выполняем:**
+
 ```commandline
 I have no name!@nariman-mysql:/$ mysql -u root -psecret
 ...
