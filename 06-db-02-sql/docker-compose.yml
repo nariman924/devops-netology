@@ -1,0 +1,22 @@
+version: '3.3'
+
+services:
+  nariman-postgres:
+    hostname: nariman-postgres
+    container_name: nariman-postgres
+    user: 1000:1000
+    image: postgres:12.0
+    restart: always
+    ports:
+      - "5432:5432"
+    cap_add:
+      - SYS_NICE
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - ./data-volume:/var/lib/postgresql/data
+      - ./dump:/dump
+    environment:
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: test_db
+      POSTGRES_USER: root
