@@ -223,3 +223,12 @@ test_database=#
 ```CREATE UNIQUE INDEX ON orders ((lower(title)));```
 
 ---
+
+
+### Доработка:
+
+Для уникальности можно добавить индекс
+
+```
+CREATE UNIQUE INDEX uniq_title_idx ON orders(title);
+```
