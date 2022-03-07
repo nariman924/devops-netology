@@ -83,3 +83,25 @@ InterfaceError: (InterfaceError) 2013: Lost connection to MySQL server during qu
 ```
 - Нужно проверить настройки памяти в конфиге PostgreSQL и привести их в соответствие аппаратным ресурсам
 - Нужно ввести ограничения на потребление памяти PostgreSQL в конфиге и/или добавить ОП
+---
+
+
+### Доработка Задание.2
+
+`Как вы думаете, в чем может быть проблема?` - тут требуется именно высказать, своё мнение
+
+```commandline
+Думаю проблема в том, что много ключей истекают и очищаются в один и тот же момент времени
+```
+---
+### Доработка Задание.4
+
+```commandline
+Поведение виртуальной памяти по умолчанию в Linux не является оптимальным для PostgreSQL. Из-за того, как ядро реализует перераспределение памяти, ядро может завершить постмастер PostgreSQL
+```
+```commandline
+sysctl -w vm.overcommit_memory=2
+echo -1000 > /proc/self/oom_score_adj
+export PG_OOM_ADJUST_FILE=/proc/self/oom_score_adj
+export PG_OOM_ADJUST_VALUE=0
+```
