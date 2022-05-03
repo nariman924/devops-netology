@@ -67,7 +67,7 @@ INFO: Total time: 10.985s
 INFO: Final Memory: 7M/40M
 INFO: ------------------------------------------------------------------------
 ```
-![](Снимок экрана от 2022-05-03 13-03-07.png)
+![](2022-05-03 13-03-07.png)
 
 ```commandline
 nariman@nariman:~/PycharmProjects/devops-netology/09-ci-02-cicd/example$ sonar-scanner   -Dsonar.projectKey=netology   -Dsonar.sources=.   -Dsonar.host.url=http://localhost:9009   -Dsonar.login=ac12abaa66bcebaf4dec96e46b3d9cc786775064
@@ -86,7 +86,7 @@ INFO: Total time: 5.832s
 INFO: Final Memory: 70M/250M
 INFO: ------------------------------------------------------------------------
 ```
-![](Снимок экрана от 2022-05-03 13-21-47.png)
+![](2022-05-03 13-21-47.png)
 
 
 ## Знакомство с Nexus
@@ -126,7 +126,7 @@ bash-4.4$ ls
 admin.password  blobs  cache  db  elasticsearch  etc  generated-bundles  instances  javaprefs  karaf.pid  keystores  lock  log  orient  port  restore-from-backup  tmp
 bash-4.4$ cat admin.password 
 ```
-![](Снимок экрана от 2022-05-03 16-48-39.png)
+![](2022-05-03 16-48-39.png)
 ```commandline
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata modelVersion="1.1.0">
