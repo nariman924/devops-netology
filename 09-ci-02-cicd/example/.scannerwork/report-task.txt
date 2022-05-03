@@ -1,0 +1,6 @@
+projectKey=netology
+serverUrl=http://localhost:9009
+serverVersion=8.7.1.42226
+dashboardUrl=http://localhost:9009/dashboard?id=netology
+ceTaskId=AYCJb7ThruMULN7jQij0
+ceTaskUrl=http://localhost:9009/api/ce/task?id=AYCJb7ThruMULN7jQij0
